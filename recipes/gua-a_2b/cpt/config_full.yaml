@@ -1,7 +1,7 @@
 # Model arguments
 model_name_or_path: google/gemma-2b
 model_revision: main
-torch_dtype: bfloat16
+torch_dtype: float16
 
 # Data training arguments
 dataset_mixer:
@@ -12,7 +12,8 @@ dataset_splits:
 preprocessing_num_workers: 12
 
 # SFT trainer config
-bf16: true
+bf16: false
+fp16: true
 do_eval: False
 evaluation_strategy: "no"
 gradient_accumulation_steps: 1
