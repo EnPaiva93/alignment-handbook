@@ -6,6 +6,7 @@ torch_dtype: bfloat16
 # Data training arguments
 dataset_mixer:
   thinkPy/corpus-cultura-paraguaya: 1.0
+text_column: contexts
 dataset_splits:
   - train
 preprocessing_num_workers: 12
@@ -20,7 +21,7 @@ gradient_checkpointing_kwargs:
   use_reentrant: False
 hub_model_id: gua-a
 hub_strategy: every_save
-learning_rate: 2.0e-04
+learning_rate: 2.0e-05
 log_level: info
 logging_steps: 5  
 logging_strategy: steps
