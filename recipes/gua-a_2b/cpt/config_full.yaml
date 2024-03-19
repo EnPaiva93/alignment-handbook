@@ -6,7 +6,7 @@ torch_dtype: float16
 # Data training arguments
 dataset_mixer:
   thinkPy/corpus-cultura-paraguaya: 1.0
-text_column: contexts
+text_column: "contexts"
 dataset_splits:
   - train
 preprocessing_num_workers: 12
