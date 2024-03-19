@@ -8,7 +8,7 @@ dataset_mixer:
   thinkPy/corpus-cultura-paraguaya: 1.0
 text_column: "contexts"
 dataset_splits:
-  - train: 1.0
+  - train
 preprocessing_num_workers: 12
 
 # SFT trainer config
